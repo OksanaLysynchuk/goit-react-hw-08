@@ -1,4 +1,3 @@
-// components/AppBar.jsx
 import Navigation from "../Navigation/Navigation.jsx";
 import AuthNav from "../AuthNav/AuthNav.jsx";
 import UserMenu from "../UserMenu/UserMenu.jsx";

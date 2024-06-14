@@ -7,3 +7,10 @@
 .username {
   font-weight: 700;
 }
+
+.btn {
+  margin-left: 15px;
+  border: 1px solid grey;
+  padding: 5px;
+  font-size: 15px;
+}

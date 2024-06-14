@@ -5,15 +5,23 @@ import ContactList from "../../components/ContactList/ContactList.jsx";
 import ContactForm from "../../components/ContactForm/ContactForm.jsx";
 import SearchBox from "../../components/SearchBox/SearchBox.jsx";
 import { fetchContacts } from "../../redux/contacts/operations.js";
-import { selectLoading } from "../../redux/contacts/selectors.js";
 
 export default function ContactsPage() {
   const dispatch = useDispatch();
-  const isLoading = useSelector(selectLoading);
+  const isLoading = useSelector((state) => state.contacts.isLoading);
+  const error = useSelector((state) => state.contacts.error);
 
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return (
     <>

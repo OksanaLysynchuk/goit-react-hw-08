@@ -1,4 +1,3 @@
-// components/UserMenu.jsx
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/auth/operations";
 import { selectUser } from "../../redux/auth/selectors";
@@ -15,7 +14,9 @@ export default function UserMenu() {
   return (
     <div className={css.wrapper}>
       <p className={css.username}>Welcome, {user.name}</p>
-      <button onClick={handleLogout}>Logout</button>
+      <button onClick={handleLogout} className={css.btn}>
+        Logout
+      </button>
     </div>
   );
 }
