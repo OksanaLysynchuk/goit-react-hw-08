@@ -1,0 +1,22 @@
+.container {
+  display: flex; /* Встановлюємо flexbox для розміщення елементів в один рядок */
+  align-items: center; /* Вирівнюємо елементи по вертикалі */
+}
+
+.icon {
+  margin-left: 10px;
+  margin-right: 10px; /* Додаємо відступ між іконкою та текстом */
+}
+
+.text {
+  margin-right: 20px; /* Додаємо відступ між текстом та наступним елементом */
+}
+
+.btn {
+  margin-left: auto; /* Розміщуємо кнопку в кінці рядка */
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #e3e3e3;
+  font-size: 14px;
+  margin-right: 10px;
+}

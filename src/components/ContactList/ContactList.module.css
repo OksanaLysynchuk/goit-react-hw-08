@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+
+  padding: 0;
+  margin-top: 20px;
+}
+
+.listitem {
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 60px;
+}
